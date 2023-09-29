@@ -1,0 +1,457 @@
+,Model,Historical data,Forecast,Mean Residual,Test MAPE (Biased),Test MAPE (Unbiased),MAPE zero residuals val,ranking
+0,Naive,2,5,-0.0707843256931679,0.013707983823024414,0.01397048621426318,0.014759425959995926,"[Index(['Low', 'Adj Close', 'Volume', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+1,Linear regression,2,5,4.6928329051345176e-14,0.0258906129237544,0.02589061292375432,0.030753947372817947,"[Index(['Low', 'Adj Close', 'Volume', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+2,Lasso REgularization,2,5,-4.644070168366668e-17,0.01397048621426318,0.01397048621426318,0.014759425959995926,"[Index(['Low', 'Adj Close', 'Volume', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+3,Ridge Regularization,2,5,3.483052626275001e-16,0.025884656707049918,0.025884656707049918,0.03066400181057488,"[Index(['Low', 'Adj Close', 'Volume', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+4,Random Forest Regresssor,2,5,0.006229125274606689,0.020977332653023352,0.021008020990258263,0.02445928529992036,"[Index(['Low', 'Adj Close', 'Volume', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+5,"SVR, kernel = poly",2,5,-0.00046096135846918366,0.03386555670053843,0.033859158998559964,0.0318519441993491,"[Index(['Low', 'Adj Close', 'Volume', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",2,5,0.021273276631140807,0.013770723541764314,0.013844431699133188,0.014642503085683649,"[Index(['Low', 'Adj Close', 'Volume', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+7,"SVR, kernel = linear",2,5,0.08580422016710786,0.020697886594919564,0.020731499990302972,0.0244071125578732,"[Index(['Low', 'Adj Close', 'Volume', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+0,Naive,2,15,-0.182675594470174,0.0240230205167876,0.025053261742841254,0.027931530284944096,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       'upper_band', 'macd_signal'],
+      dtype='object')]"
+1,Linear regression,2,15,-4.229986855026684e-15,0.0401736061060935,0.040173606106093544,0.04726572363981829,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       'upper_band', 'macd_signal'],
+      dtype='object')]"
+2,Lasso REgularization,2,15,-9.50558843826221e-17,0.025053261742841254,0.025053261742841254,0.027931530284944096,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       'upper_band', 'macd_signal'],
+      dtype='object')]"
+3,Ridge Regularization,2,15,3.50518573660919e-16,0.03711100234073519,0.03711100234073519,0.043644794821125855,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       'upper_band', 'macd_signal'],
+      dtype='object')]"
+4,Random Forest Regresssor,2,15,0.015118075651553273,0.025515455535541805,0.025462639541931894,0.030210161701846868,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       'upper_band', 'macd_signal'],
+      dtype='object')]"
+5,"SVR, kernel = poly",2,15,-0.1086761992870672,0.06948280498473378,0.06940506493806899,0.07734976021116036,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       'upper_band', 'macd_signal'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",2,15,0.10899941106330384,0.02443427406694691,0.025130846640299836,0.028039461242892243,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       'upper_band', 'macd_signal'],
+      dtype='object')]"
+7,"SVR, kernel = linear",2,15,0.017624432363337827,0.04255863438838901,0.04248680131565068,0.04908358159991763,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       'upper_band', 'macd_signal'],
+      dtype='object')]"
+0,Naive,2,30,-0.34148787132183983,0.03901114277509392,0.040496191581621085,0.04331277772580611,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       '7_rolling_STD', 'timedelta', 'macd_hist'],
+      dtype='object')]"
+1,Linear regression,2,30,2.95035045990353e-15,0.04807390287749961,0.04807390287749961,0.05351293908031103,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       '7_rolling_STD', 'timedelta', 'macd_hist'],
+      dtype='object')]"
+2,Lasso REgularization,2,30,0.0,0.040496191581621085,0.040496191581621085,0.04331277772580611,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       '7_rolling_STD', 'timedelta', 'macd_hist'],
+      dtype='object')]"
+3,Ridge Regularization,2,30,2.581556652415589e-16,0.044882501733254726,0.044882501733254726,0.04992683058550588,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       '7_rolling_STD', 'timedelta', 'macd_hist'],
+      dtype='object')]"
+4,Random Forest Regresssor,2,30,-0.0018217995540684595,0.03439287490427032,0.03439276271457175,0.03797813956973422,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       '7_rolling_STD', 'timedelta', 'macd_hist'],
+      dtype='object')]"
+5,"SVR, kernel = poly",2,30,-0.12742426822847572,0.08312917390013581,0.08136711833908199,0.08891841933931698,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       '7_rolling_STD', 'timedelta', 'macd_hist'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",2,30,0.004012484889448235,0.04039451073601879,0.040414079908967095,0.043270068921120196,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       '7_rolling_STD', 'timedelta', 'macd_hist'],
+      dtype='object')]"
+7,"SVR, kernel = linear",2,30,0.01133392069475493,0.051225137799943886,0.05114187523197099,0.05629241342089859,"[Index(['Adj Close', 'month', '30_rolling_mean', '60_rolling_mean',
+       '7_rolling_STD', 'timedelta', 'macd_hist'],
+      dtype='object')]"
+0,Naive,2,60,-0.6880596644842802,0.04466261332948485,0.044737927007504244,0.047107258371051515,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'day_of_week',
+       'month', 'end_of_month', 'H-L', 'C-O', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'timedelta', 'RSI', 'upper_band',
+       'middle_band', 'lower_band', 'macd', 'macd_signal', 'macd_hist',
+       'stochastic_k', 'stochastic_d'],
+      dtype='object')]"
+1,Linear regression,2,60,5.726762347917225e-15,0.028790479411979195,0.028790479411979212,0.032293429044708354,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'day_of_week',
+       'month', 'end_of_month', 'H-L', 'C-O', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'timedelta', 'RSI', 'upper_band',
+       'middle_band', 'lower_band', 'macd', 'macd_signal', 'macd_hist',
+       'stochastic_k', 'stochastic_d'],
+      dtype='object')]"
+2,Lasso REgularization,2,60,-5.96537744574711e-17,0.029514885875885615,0.029514885875885615,0.032839292164062554,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'day_of_week',
+       'month', 'end_of_month', 'H-L', 'C-O', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'timedelta', 'RSI', 'upper_band',
+       'middle_band', 'lower_band', 'macd', 'macd_signal', 'macd_hist',
+       'stochastic_k', 'stochastic_d'],
+      dtype='object')]"
+3,Ridge Regularization,2,60,8.948066168620664e-16,0.030458857209061784,0.030458857209061784,0.03354818127531236,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'day_of_week',
+       'month', 'end_of_month', 'H-L', 'C-O', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'timedelta', 'RSI', 'upper_band',
+       'middle_band', 'lower_band', 'macd', 'macd_signal', 'macd_hist',
+       'stochastic_k', 'stochastic_d'],
+      dtype='object')]"
+4,Random Forest Regresssor,2,60,-1.4582033756270713e-16,0.034025257222111964,0.034025257222111964,0.03764633617220197,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'day_of_week',
+       'month', 'end_of_month', 'H-L', 'C-O', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'timedelta', 'RSI', 'upper_band',
+       'middle_band', 'lower_band', 'macd', 'macd_signal', 'macd_hist',
+       'stochastic_k', 'stochastic_d'],
+      dtype='object')]"
+5,"SVR, kernel = poly",2,60,-0.02007274929961694,0.08180018248727172,0.0816473820592432,0.09135477877883523,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'day_of_week',
+       'month', 'end_of_month', 'H-L', 'C-O', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'timedelta', 'RSI', 'upper_band',
+       'middle_band', 'lower_band', 'macd', 'macd_signal', 'macd_hist',
+       'stochastic_k', 'stochastic_d'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",2,60,0.002005806496342268,0.03495051849233422,0.03495294254945911,0.03904570262263898,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'day_of_week',
+       'month', 'end_of_month', 'H-L', 'C-O', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'timedelta', 'RSI', 'upper_band',
+       'middle_band', 'lower_band', 'macd', 'macd_signal', 'macd_hist',
+       'stochastic_k', 'stochastic_d'],
+      dtype='object')]"
+7,"SVR, kernel = linear",2,60,-0.053182403716441375,0.02971480728913784,0.029550557727475335,0.03319549175833007,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'day_of_week',
+       'month', 'end_of_month', 'H-L', 'C-O', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', '7_rolling_STD', 'timedelta', 'RSI', 'upper_band',
+       'middle_band', 'lower_band', 'macd', 'macd_signal', 'macd_hist',
+       'stochastic_k', 'stochastic_d'],
+      dtype='object')]"
+0,Naive,5,5,0.06792814060599504,0.016179597519176244,0.016165020999675175,0.014359925858447746,"[Index(['Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', 'upper_band', 'lower_band',
+       'macd', 'macd_hist'],
+      dtype='object')]"
+1,Linear regression,5,5,-4.501522242120874e-15,0.01668252859856311,0.01668252859856313,0.014431766451186096,"[Index(['Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', 'upper_band', 'lower_band',
+       'macd', 'macd_hist'],
+      dtype='object')]"
+2,Lasso REgularization,5,5,-5.105696304862995e-17,0.016165020999675175,0.016165020999675175,0.014359925858447746,"[Index(['Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', 'upper_band', 'lower_band',
+       'macd', 'macd_hist'],
+      dtype='object')]"
+3,Ridge Regularization,5,5,8.509493841438326e-17,0.016136437691757804,0.016136437691757804,0.01346364448319574,"[Index(['Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', 'upper_band', 'lower_band',
+       'macd', 'macd_hist'],
+      dtype='object')]"
+4,Random Forest Regresssor,5,5,0.0062593383902968544,0.01621826430228742,0.016218402108112227,0.014478490519409727,"[Index(['Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', 'upper_band', 'lower_band',
+       'macd', 'macd_hist'],
+      dtype='object')]"
+5,"SVR, kernel = poly",5,5,0.08252091370760854,0.017001726999464305,0.016583838469243748,0.014256986535412509,"[Index(['Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', 'upper_band', 'lower_band',
+       'macd', 'macd_hist'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",5,5,0.024584926665211244,0.01613724810786067,0.016136812490579796,0.014459075846972357,"[Index(['Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', 'upper_band', 'lower_band',
+       'macd', 'macd_hist'],
+      dtype='object')]"
+7,"SVR, kernel = linear",5,5,0.0884904028320222,0.016847244261984043,0.0164596768134687,0.01388490043238506,"[Index(['Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', 'upper_band', 'lower_band',
+       'macd', 'macd_hist'],
+      dtype='object')]"
+0,Naive,5,15,0.22565217409732838,0.024659319748342488,0.024857592965437162,0.026691865714090962,"[Index(['month', '21_rolling_mean', '30_rolling_mean', '60_rolling_mean',
+       'timedelta', 'upper_band', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+1,Linear regression,5,15,6.556215581168074e-15,0.02466722802835272,0.02466722802835271,0.02313278205301143,"[Index(['month', '21_rolling_mean', '30_rolling_mean', '60_rolling_mean',
+       'timedelta', 'upper_band', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+2,Lasso REgularization,5,15,3.432573602705798e-17,0.024857592965437162,0.024857592965437162,0.026691865714090962,"[Index(['month', '21_rolling_mean', '30_rolling_mean', '60_rolling_mean',
+       'timedelta', 'upper_band', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+3,Ridge Regularization,5,15,-1.0297720808117394e-16,0.02490589490224051,0.02490589490224051,0.022661624046478594,"[Index(['month', '21_rolling_mean', '30_rolling_mean', '60_rolling_mean',
+       'timedelta', 'upper_band', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+4,Random Forest Regresssor,5,15,-0.00030991754149900785,0.024107410596440716,0.0241073358338974,0.0252829880052097,"[Index(['month', '21_rolling_mean', '30_rolling_mean', '60_rolling_mean',
+       'timedelta', 'upper_band', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+5,"SVR, kernel = poly",5,15,-0.015447042654505376,0.02428739556532162,0.02435411462749421,0.02218524050953622,"[Index(['month', '21_rolling_mean', '30_rolling_mean', '60_rolling_mean',
+       'timedelta', 'upper_band', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",5,15,0.004330659550812469,0.02483467382308052,0.02482495400456958,0.02668672934197714,"[Index(['month', '21_rolling_mean', '30_rolling_mean', '60_rolling_mean',
+       'timedelta', 'upper_band', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+7,"SVR, kernel = linear",5,15,-0.02548461910824113,0.024086217715739572,0.024185356753567,0.021938966491803796,"[Index(['month', '21_rolling_mean', '30_rolling_mean', '60_rolling_mean',
+       'timedelta', 'upper_band', 'macd_signal', 'macd_hist'],
+      dtype='object')]"
+0,Naive,5,30,0.4440146811589179,0.03301660981714872,0.033560494504502277,0.03904586106682772,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', 'timedelta', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist', 'stochastic_k',
+       'stochastic_d'],
+      dtype='object')]"
+1,Linear regression,5,30,4.3989292013152834e-14,0.047016452216655624,0.04701645221665508,0.05390612502505355,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', 'timedelta', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist', 'stochastic_k',
+       'stochastic_d'],
+      dtype='object')]"
+2,Lasso REgularization,5,30,5.2181841059493283e-17,0.033023114819021905,0.033023114819021905,0.03722660456333878,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', 'timedelta', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist', 'stochastic_k',
+       'stochastic_d'],
+      dtype='object')]"
+3,Ridge Regularization,5,30,1.5654552317847985e-15,0.04607689641562731,0.04607689641562731,0.05317372091942146,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', 'timedelta', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist', 'stochastic_k',
+       'stochastic_d'],
+      dtype='object')]"
+4,Random Forest Regresssor,5,30,-0.004660140799286167,0.032323348175839046,0.032329429585657155,0.03862072620763895,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', 'timedelta', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist', 'stochastic_k',
+       'stochastic_d'],
+      dtype='object')]"
+5,"SVR, kernel = poly",5,30,0.24445086903407465,0.10539978091581516,0.1090238272429468,0.12511409087025915,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', 'timedelta', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist', 'stochastic_k',
+       'stochastic_d'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",5,30,0.08069112108674838,0.03396541113477591,0.033751964441191495,0.03869082986180405,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', 'timedelta', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist', 'stochastic_k',
+       'stochastic_d'],
+      dtype='object')]"
+7,"SVR, kernel = linear",5,30,0.1320396371306134,0.04146925415782851,0.04000226610758959,0.044403213173939894,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', '7_rolling_mean',
+       '14_rolling_mean', '21_rolling_mean', '30_rolling_mean',
+       '60_rolling_mean', 'timedelta', 'RSI', 'upper_band', 'middle_band',
+       'lower_band', 'macd', 'macd_signal', 'macd_hist', 'stochastic_k',
+       'stochastic_d'],
+      dtype='object')]"
+0,Naive,5,60,1.0425879320307592,0.03964521041465991,0.044548512980571865,0.04882145499514707,"[Index(['Adj Close', 'month', '7_rolling_mean', 'upper_band'], dtype='object')]"
+1,Linear regression,5,60,1.462146986400809e-14,0.04544694331365324,0.0454469433136531,0.04524060830922415,"[Index(['Adj Close', 'month', '7_rolling_mean', 'upper_band'], dtype='object')]"
+2,Lasso REgularization,5,60,-4.463208139196609e-16,0.03860235015838716,0.03860235015838716,0.03635709206023553,"[Index(['Adj Close', 'month', '7_rolling_mean', 'upper_band'], dtype='object')]"
+3,Ridge Regularization,5,60,2.2137512370415183e-15,0.038445753687208754,0.038445753687208754,0.03576648750902464,"[Index(['Adj Close', 'month', '7_rolling_mean', 'upper_band'], dtype='object')]"
+4,Random Forest Regresssor,5,60,-0.006378411195134005,0.038977105953674096,0.039041840535215776,0.030695395326767953,"[Index(['Adj Close', 'month', '7_rolling_mean', 'upper_band'], dtype='object')]"
+5,"SVR, kernel = poly",5,60,0.13052183766976516,0.04898610958963472,0.047704507571977056,0.05008537371449591,"[Index(['Adj Close', 'month', '7_rolling_mean', 'upper_band'], dtype='object')]"
+6,"SVR, kernel = rbf",5,60,-0.26841587819993956,0.0408699911498823,0.043436664374230924,0.04927166032672033,"[Index(['Adj Close', 'month', '7_rolling_mean', 'upper_band'], dtype='object')]"
+7,"SVR, kernel = linear",5,60,-0.07699457728592804,0.0370632239442773,0.03755241755592743,0.03892689545719827,"[Index(['Adj Close', 'month', '7_rolling_mean', 'upper_band'], dtype='object')]"
+0,Naive,10,5,0.055451895266163106,0.017582699016523918,0.017475830380063024,0.014387246387634145,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+1,Linear regression,10,5,-0.005174641918242679,0.018672918072557547,0.018651314681646776,0.015861786631478806,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+2,Lasso REgularization,10,5,1.4500872158369393e-17,0.017475830380063024,0.017475830380063024,0.014387246387634145,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+3,Ridge Regularization,10,5,6.007504179895891e-17,0.018645444614814162,0.018645444614814162,0.01579390117921307,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+4,Random Forest Regresssor,10,5,0.0025904465893041907,0.017855002578436058,0.017858994044018844,0.014932415665084471,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+5,"SVR, kernel = poly",10,5,0.05253784354130277,0.01835826624173418,0.018555208186779144,0.016039675876437086,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",10,5,0.00664610596145525,0.0178590356888379,0.01786837626400775,0.01438462380275009,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+7,"SVR, kernel = linear",10,5,0.05280478549092667,0.01835791962490798,0.018554484599378217,0.0160348071189021,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+0,Naive,10,15,0.055451895266163106,0.017582699016523918,0.017475830380063024,0.014387246387634145,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+1,Linear regression,10,15,-0.005174641918242679,0.018672918072557547,0.018651314681646776,0.015861786631478806,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+2,Lasso REgularization,10,15,1.4500872158369393e-17,0.017475830380063024,0.017475830380063024,0.014387246387634145,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+3,Ridge Regularization,10,15,6.007504179895891e-17,0.018645444614814162,0.018645444614814162,0.01579390117921307,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+4,Random Forest Regresssor,10,15,0.0025904465893041907,0.017855002578436058,0.017858994044018844,0.014932415665084471,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+5,"SVR, kernel = poly",10,15,0.05253784354130277,0.01835826624173418,0.018555208186779144,0.016039675876437086,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",10,15,0.00664610596145525,0.0178590356888379,0.01786837626400775,0.01438462380275009,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+7,"SVR, kernel = linear",10,15,0.05280478549092667,0.01835791962490798,0.018554484599378217,0.0160348071189021,"[Index(['month', '60_rolling_mean', 'upper_band', 'middle_band', 'lower_band',
+       'macd', 'macd_signal'],
+      dtype='object')]"
+0,Naive,10,30,0.32949941093705426,0.04343502273872372,0.04292038622009882,0.03958092530822314,"[Index(['month', '60_rolling_mean', 'middle_band', 'macd', 'macd_signal'], dtype='object')]"
+1,Linear regression,10,30,-5.3562703284624745e-16,0.04489392734505556,0.04489392734505556,0.03911183239243902,"[Index(['month', '60_rolling_mean', 'middle_band', 'macd', 'macd_signal'], dtype='object')]"
+2,Lasso REgularization,10,30,-7.532255149400356e-17,0.04292038622009882,0.04292038622009882,0.03958092530822314,"[Index(['month', '60_rolling_mean', 'middle_band', 'macd', 'macd_signal'], dtype='object')]"
+3,Ridge Regularization,10,30,3.5987441269357253e-16,0.04466687132670036,0.04466687132670036,0.039297111964706026,"[Index(['month', '60_rolling_mean', 'middle_band', 'macd', 'macd_signal'], dtype='object')]"
+4,Random Forest Regresssor,10,30,-0.004290233358898499,0.060967983063427184,0.060905526713330375,0.06810482440997856,"[Index(['month', '60_rolling_mean', 'middle_band', 'macd', 'macd_signal'], dtype='object')]"
+5,"SVR, kernel = poly",10,30,0.1557433598734414,0.04394520195468506,0.04465369783890305,0.040141861253921565,"[Index(['month', '60_rolling_mean', 'middle_band', 'macd', 'macd_signal'], dtype='object')]"
+6,"SVR, kernel = rbf",10,30,0.06915012579603926,0.04225475984749032,0.0423515683891076,0.039478016395458115,"[Index(['month', '60_rolling_mean', 'middle_band', 'macd', 'macd_signal'], dtype='object')]"
+7,"SVR, kernel = linear",10,30,0.1584933646439168,0.043901764880493035,0.044599050723270674,0.040726533256166327,"[Index(['month', '60_rolling_mean', 'middle_band', 'macd', 'macd_signal'], dtype='object')]"
+0,Naive,10,60,0.6440131188007644,0.06477209495832903,0.06463446529748408,0.04683066882127994,"[Index(['Close', 'month', '60_rolling_mean'], dtype='object')]"
+1,Linear regression,10,60,-9.15189212428036e-16,0.0624544481071614,0.0624544481071614,0.044509245123660765,"[Index(['Close', 'month', '60_rolling_mean'], dtype='object')]"
+2,Lasso REgularization,10,60,8.473974189148482e-17,0.06191312979380208,0.06191312979380208,0.045455848508473784,"[Index(['Close', 'month', '60_rolling_mean'], dtype='object')]"
+3,Ridge Regularization,10,60,-1.1863563864807874e-16,0.06220126957264417,0.06220126957264417,0.04457861302669909,"[Index(['Close', 'month', '60_rolling_mean'], dtype='object')]"
+4,Random Forest Regresssor,10,60,-0.010684775788639382,0.06680990458607072,0.06672990795898716,0.0544205420913457,"[Index(['Close', 'month', '60_rolling_mean'], dtype='object')]"
+5,"SVR, kernel = poly",10,60,0.16047077783547853,0.06199475566420821,0.062317990087535136,0.044025900336311076,"[Index(['Close', 'month', '60_rolling_mean'], dtype='object')]"
+6,"SVR, kernel = rbf",10,60,-0.04049544826620351,0.06100404409283214,0.060988019826508755,0.04781515705249479,"[Index(['Close', 'month', '60_rolling_mean'], dtype='object')]"
+7,"SVR, kernel = linear",10,60,0.1382612405236806,0.06185966811096466,0.06214216999996776,0.044040124667712004,"[Index(['Close', 'month', '60_rolling_mean'], dtype='object')]"
+0,Naive,15,5,0.04092749314976767,0.018936647503380907,0.018861580521109148,0.01441905197826877,"[Index(['month', '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist', 'stochastic_d'],
+      dtype='object')]"
+1,Linear regression,15,5,4.165816809810757e-15,0.019327357696526864,0.019327357696526885,0.01589405839684617,"[Index(['month', '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist', 'stochastic_d'],
+      dtype='object')]"
+2,Lasso REgularization,15,5,-3.010774304068221e-17,0.018861580521109148,0.018861580521109148,0.01441905197826877,"[Index(['month', '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist', 'stochastic_d'],
+      dtype='object')]"
+3,Ridge Regularization,15,5,1.341163099084935e-16,0.019231387278203466,0.019231387278203466,0.01584198613275206,"[Index(['month', '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist', 'stochastic_d'],
+      dtype='object')]"
+4,Random Forest Regresssor,15,5,-0.001065667728293562,0.019229451806526184,0.019225469644517757,0.015214222855590992,"[Index(['month', '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist', 'stochastic_d'],
+      dtype='object')]"
+5,"SVR, kernel = poly",15,5,0.0324885146885949,0.0210343446785228,0.021141257814577003,0.017547199790751342,"[Index(['month', '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist', 'stochastic_d'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",15,5,0.005204606322181927,0.018841435764909816,0.018849055666802145,0.014403067149955614,"[Index(['month', '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist', 'stochastic_d'],
+      dtype='object')]"
+7,"SVR, kernel = linear",15,5,0.027101414234460844,0.01902747963093442,0.01907422731960104,0.014983275670018538,"[Index(['month', '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist', 'stochastic_d'],
+      dtype='object')]"
+0,Naive,15,15,0.12367323237802587,0.03075814175045261,0.030592574571239282,0.026860392704702175,"[Index(['Close', 'Adj Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+1,Linear regression,15,15,3.97398949934579e-15,0.03072533396643285,0.030725333966432844,0.02783277952602047,"[Index(['Close', 'Adj Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+2,Lasso REgularization,15,15,7.135616504350176e-17,0.030592574571239282,0.030592574571239282,0.026860392704702175,"[Index(['Close', 'Adj Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+3,Ridge Regularization,15,15,-5.488935772577058e-18,0.03065489378961742,0.03065489378961742,0.02749047263409968,"[Index(['Close', 'Adj Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+4,Random Forest Regresssor,15,15,0.0015327566683667727,0.03068525356955488,0.03068910734533532,0.027589498732270182,"[Index(['Close', 'Adj Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+5,"SVR, kernel = poly",15,15,0.06819252177936903,0.03678117931985253,0.03697313591757271,0.03219882470631732,"[Index(['Close', 'Adj Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",15,15,0.02010053981439135,0.030605338840635814,0.030624300846525232,0.026959217866342814,"[Index(['Close', 'Adj Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+7,"SVR, kernel = linear",15,15,0.05761415084228766,0.030835625159694617,0.030755542142410143,0.027586090846574412,"[Index(['Close', 'Adj Close', 'month', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+0,Naive,15,30,0.24708128234413448,0.04392481554949968,0.04333897571988013,0.04000173635107273,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', 'H-L',
+       '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+1,Linear regression,15,30,1.1090861011243767e-14,0.04341445711148941,0.04341445711148941,0.03542676602083222,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', 'H-L',
+       '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+2,Lasso REgularization,15,30,-6.063592004159117e-17,0.04333897571988013,0.04333897571988013,0.04000173635107273,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', 'H-L',
+       '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+3,Ridge Regularization,15,30,1.047347709809302e-16,0.04223520970641033,0.04223520970641033,0.03612090659563158,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', 'H-L',
+       '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+4,Random Forest Regresssor,15,30,-0.0001774776766442308,0.04361843859207109,0.04361779285546674,0.042225510871624565,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', 'H-L',
+       '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+5,"SVR, kernel = poly",15,30,0.12162944269458464,0.05352169041393286,0.054485694433964615,0.06537571144954993,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', 'H-L',
+       '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+6,"SVR, kernel = rbf",15,30,0.09641219075060375,0.04318672481520332,0.04332034944133711,0.04001526307842537,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', 'H-L',
+       '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+7,"SVR, kernel = linear",15,30,0.11225067195813491,0.0435802463609112,0.04331284744468176,0.03555199636564991,"[Index(['Open', 'High', 'Low', 'Close', 'Adj Close', 'month', 'H-L',
+       '7_rolling_mean', '14_rolling_mean', '21_rolling_mean',
+       '30_rolling_mean', '60_rolling_mean', '7_rolling_STD', 'timedelta',
+       'RSI', 'upper_band', 'middle_band', 'lower_band', 'macd', 'macd_signal',
+       'macd_hist'],
+      dtype='object')]"
+0,Naive,15,60,0.5113722659854344,0.05743766698193083,0.05612241699524314,0.04631712751435237,"[Index(['Close', 'Adj Close', 'month', '60_rolling_mean', 'lower_band'], dtype='object')]"
+1,Linear regression,15,60,-2.6676614248326015e-15,0.05395157924459592,0.05395157924459592,0.04878373902449678,"[Index(['Close', 'Adj Close', 'month', '60_rolling_mean', 'lower_band'], dtype='object')]"
+2,Lasso REgularization,15,60,1.1115255936802505e-17,0.0560678944251383,0.0560678944251383,0.04504868570488077,"[Index(['Close', 'Adj Close', 'month', '60_rolling_mean', 'lower_band'], dtype='object')]"
+3,Ridge Regularization,15,60,-8.558747071337929e-16,0.052529835136504485,0.052529835136504485,0.04355263438475628,"[Index(['Close', 'Adj Close', 'month', '60_rolling_mean', 'lower_band'], dtype='object')]"
+4,Random Forest Regresssor,15,60,0.003708416823392782,0.0632196444302859,0.06325624555226839,0.05150582473602271,"[Index(['Close', 'Adj Close', 'month', '60_rolling_mean', 'lower_band'], dtype='object')]"
+5,"SVR, kernel = poly",15,60,0.24628794042815239,0.11605307145064162,0.1198336858655908,0.22792632656918435,"[Index(['Close', 'Adj Close', 'month', '60_rolling_mean', 'lower_band'], dtype='object')]"
+6,"SVR, kernel = rbf",15,60,0.19698558290792165,0.054815311996969776,0.05514307010774819,0.04630793523476066,"[Index(['Close', 'Adj Close', 'month', '60_rolling_mean', 'lower_band'], dtype='object')]"
+7,"SVR, kernel = linear",15,60,-0.05253741319090882,0.055482693573490435,0.05575426051954983,0.05504844249409626,"[Index(['Close', 'Adj Close', 'month', '60_rolling_mean', 'lower_band'], dtype='object')]"
